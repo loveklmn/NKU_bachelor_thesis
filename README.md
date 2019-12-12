@@ -14,7 +14,7 @@ Add following to editor settings(command + ,)
 
 ```json
 {
-  "latex-workshop.view.pdf.viewer": "browser",
+  "latex-workshop.view.pdf.viewer": "tab",
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
