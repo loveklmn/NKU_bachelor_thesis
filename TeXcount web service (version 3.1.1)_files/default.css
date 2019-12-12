@@ -1,0 +1,330 @@
+/*** Styling of the contents of the different elements ***/
+
+/* Hoverframe styling */
+
+.hoverframe>h1 {
+ margin:24pt 24px;
+ padding:0pt;
+ border-bottom:2px solid #33c;
+ text-align:center;
+ font-style:italic;
+ color:#006;
+ font-family:Cambria,Times,serif;
+}
+.hoverframe .download {
+ display:block;
+ margin:12px 36px;
+ font-size:12pt;
+ color:#003;
+}
+
+/* General styling */
+.download dl * {
+ font-family:inherit;
+}
+.download dl dt {font-weight:bold;color:#060;}
+.download p {font-style:normal;}
+.download .nb {color:#603;font-style:italic;font-weight:bold;}
+
+.nb {color:#603;font-style:italic;font-weight:bold;}
+.notam {color:#903;font-style:italic;}
+
+/* Contents styling */
+
+#contents h1.topheader img {
+ display: block;
+ margin: 0px auto; padding: 12pt 0 0 0;
+ border: none;
+}
+#contents h1.topheader {
+ margin:0px;
+ padding:8pt 12pt 0pt 12pt;
+ border:none;
+ font-size:500%;
+ color:#C00;
+}
+
+#contents h1 {
+ margin:0px;
+ padding:12pt 12pt 4pt 12pt;
+ border-bottom:2px solid #96c;
+ text-align:center;
+ font-style:italic;
+ color:#A00;
+ font-family:Cambria,Times,serif;
+}
+
+#contents h1 em {
+ font-style:normal;
+}
+
+#contents hr {
+ height: 1px; margin: 8pt 0px; padding: 0px;
+ background: #CCF; border: none;
+}
+
+#contents a {
+ color:#006;
+ font-weight:bold;
+ text-decoration:none;
+}
+#contents a.outref:after {
+ color: #CAA;
+ content: " (external link)";
+}
+#contents a.faqref:after {
+ color: #CAA;
+ content: " (FAQ)";
+}
+#contents a:hover {
+ color:#00C;
+ text-decoration:underline;
+}
+
+#contents ul.contents {
+ font-size:80%;
+}
+
+#contents ul.menu {
+ font-weight:bold;
+ font-style:italic;
+ padding: 0pt;
+ margin: 8pt 16pt;
+}
+#contents ul.menu li {
+ padding: 0pt;
+ margin: 8pt;
+}
+#contents ul.menu li.head {
+ list-style: none;
+ padding: 0pt;
+ margin: 8pt 0pt 8pt -8pt;
+ font-size:120%;
+ font-weight: bold;
+ color:#000;
+}
+
+#contents dl {
+ padding: 0pt;
+ margin: 0pt;
+ }
+#contents dl dt, #contents dt {
+ margin: 0pt;
+ padding: 4pt 0pt 0pt 8pt;
+ font-weight:bold;
+ color: #309;
+ }
+#contents dl dt.head {
+ padding: 8pt 0pt 8pt 0pt;
+ font-size: 120%;
+ color: #060;
+ }
+#contents dl dd {
+ padding: 0pt 0pt 4pt 0pt;
+ font-size:90%;
+ }
+#contents dl.version ul {
+ margin: 0pt;
+ padding: 0pt 8pt;
+ }
+
+#contents dl.keymenu {
+ margin:4pt 16pt;
+ padding:0pt;
+}
+#contents dl.keymenu dt {
+ clear:both;
+ float:left;
+ margin:0pt;
+ padding:0pt 0.5em 0pt 0pt;
+ font-size:12pt;
+ font-weight:bold;
+}
+#contents dl.keymenu dd {
+ margin:0pt;
+ margin-left:16pt;
+ padding:0pt;
+ font-size:12pt;
+}
+#contents dl dd.download {
+ font-size:90%; font-weight:bold; color:#669;
+ padding:0; margin-top:0; margin-bottom:0;
+}
+
+#contents .comment {
+ font-weight: normal;
+ font-size:90%;
+}
+
+#contents .boxed {
+ display:block;
+ margin:8pt 16pt;
+ padding:4pt;
+ border:1px solid #669;
+ background:#EEF;
+ color:#003;
+}
+
+#contents ul.code {
+ list-style:none;
+ margin:16pt 16pt;
+ padding:0;
+}
+#contents ul.code li {
+ text-indent:-16pt;
+ margin:0;
+ padding:0 0 0 16pt;
+}
+#contents span.code {
+ display:block;
+ margin:4pt 16pt;
+}
+
+#contents .image {
+ clear:right; float:right;
+ padding:0; margin:4pt 0 4pt 8pt;
+}
+#contents div.image,
+#contents div.iframe {
+ display:block; position:relative;
+ padding: 4pt; top:4pt;
+ border: 1px solid #996; background: #F8F0E0;
+}
+#contents div.iframe {margin:0 5%;}
+#contents div.scrollbox {
+ max-height: 350px;
+ width: auto;
+ overflow: auto;
+}
+#contents .image img {
+ padding: 0; margin: 0;
+ border: none;
+}
+#contents .image img.frame {
+ border: 1px solid #CCC;
+}
+#contents .image span,
+#contents .iframe span {
+ display:block;
+ padding: 0; margin: 0;
+ font-size: 80%;
+}
+#contents div.iframe iframe {
+ width: 100%; height: 400px; margin: 0; padding:0;
+ border: 1px solid #CCC; background: #FFF;
+}
+
+/*** Different stylings ***/
+
+.clear {
+ clear:both;
+}
+.floatright {
+ display:block;
+ float:right;
+ margin:8px 0px 8px 4px;
+ padding:0px;
+ clear:right;
+}
+.floatright img {
+ padding:0px;
+ margin:0px;
+ border:1px solid #c8a;
+}
+.floatleft {
+ display:block;
+ float: left;
+ margin:0px 4px 0px 0px;
+ padding:0px;
+}
+.alternative {
+ font-size:80%;
+}
+.caption {
+ margin:0px;
+ padding:0px;
+ font-size:80%;
+ color:#900;
+}
+.boxtext {
+ margin:0px;
+ padding:2px;
+ font-size:90%;
+ color:#900;
+}
+.tinybox, .smallbox, .mediumbox, .bigbox {
+ padding:2px;
+ border:1px solid #a99;
+ background:#ecc;
+}
+.tinybox * {width:200px;}
+.smallbox * {width:300px;}
+.smallbox .box4 * {width:70px;}
+.mediumbox * {width:400px;}
+.mediumbox .box4 * {width:95px;}
+.bigbox * {width:500px;}
+
+em.smallhead {
+  font-weight: bold;
+  font-style: italic;
+  color: #900;
+}
+
+i.alt, i.alts {
+ color: #096;
+}
+
+tt.mathindent {
+ padding-left:8pt;
+}
+
+tt, .code, .codeline {
+ color:#00c;
+ font-family: monospace;
+}
+.codeline {
+ padding-left: 8pt;
+}
+.outcode {
+ color:#090;
+ font-family: monospace;
+ font-size: 90%;
+}
+.syntax emph {
+ color: #000;
+ font-weight: normal;
+}
+
+/* Front page styling */
+.center {
+ text-align: center;
+}
+.news {
+ color:#f00;
+ font-weight:bold;
+}
+.news a {
+ color:#f00;
+}
+h1 .update, h2 .update, h3 .update {
+ color:#C99;
+}
+.update {color:#C00;}
+li.subupdatehead {
+ list-style: none;
+ margin-left: -12pt;
+ color: #933;
+}
+
+/* Link list styling */
+
+#contents dl.linklist dt {
+ color:#99C;
+}
+#contents dl.linklist dt a {
+ color:#339;
+}
+#contents dl.linklist dt a:hover {
+ color:#933;
+}
+

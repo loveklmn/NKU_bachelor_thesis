@@ -1,0 +1,44 @@
+
+
+var active_popdiv;
+
+function setup_popdiv() {
+  var div=document.getElementById('help');
+  active_popdiv=null;
+  for (i=div.children.length;i-->0;) {
+    var child=div.children[i];
+    child.style.display='none';
+    if (child.className=='help') {
+      child.className='helpblock';
+      child.onclick=close_popdiv;
+    }
+  }
+}
+
+
+function close_popdiv() {
+  active_popdiv.style.display='none';
+  active_popdiv=null;
+}
+
+
+function open_popdiv(boxdiv,loc) {
+  boxdiv.style.display='block';  
+}
+
+
+function popdiv(loc,ref) {
+  var boxdiv=document.getElementById(ref);
+  if (boxdiv != null) {  
+    if (active_popdiv==boxdiv) close_popdiv();
+    else {
+      if (active_popdiv) close_popdiv();
+      active_popdiv=boxdiv;
+      open_popdiv(boxdiv,loc);
+    }
+    return false;  
+  }  
+  return false;
+}
+
+

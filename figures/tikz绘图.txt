@@ -1,0 +1,28 @@
+\begin{figure}[p]
+	\centering
+	\begin{tikzpicture}[node distance=1.5cm]
+	%定义流程图具体形状\node[样式]（名称）{标题};
+	\node (start) [startstop] {start};
+	\node (pro1) [process, below of=start, yshift=-0.2cm, left of=start, xshift=-1cm] {PROCESS 1};
+	\node (pro2) [process, right of=pro1, xshift= 4cm] {PROCESS 2};
+	\node (in1) [io, below of=pro1, yshift= -0.2cm, right of=pro1, xshift=1cm] {IO};
+	\node (pro3) [process, below of=in1, yshift= -0.2cm] {PROCESS 3};
+	\node (pro4) [process, below of=pro3, yshift= -0.2cm] {PROCESS 4};
+	\node (in2) [io, below of=pro4, yshift= -0.2cm] {IO 2};
+	\node (dec1) [decision, below of=in2, yshift= -0.2cm] {DECISION};
+	\node (stop) [startstop, below of=dec1] {end};
+	
+	%连接具体形状\draw[arrow1](0, 50pt)node[right, yshift = -15pt]{输入源程序} -- (词法);
+	\draw [arrow](start) -- (pro1);
+	\draw [arrow](start) -- (pro2);
+	\draw [arrow](pro1) -- (in1);
+	\draw [arrow](pro2) -- (in1);
+	\draw [arrow](in1) -- (pro3);
+	\draw [arrow](pro3) -- (pro4);
+	\draw [arrow](pro4) -- (in2);
+	\draw [arrow](in2) -- (dec1);
+	\draw [arrow](dec1) -- ($(dec1.east) + (1.5,0)$) node[anchor=north] {NO} |- (pro3);
+	\draw [arrow](dec1) -- node[anchor=west] {YES} (stop);
+	\end{tikzpicture}
+	\caption{\label{fig: } RAISR训练过程}
+\end{figure}

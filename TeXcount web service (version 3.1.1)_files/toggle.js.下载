@@ -1,0 +1,21 @@
+
+function setup_toggles() {
+  var arr=document.getElementsByName('trigger');
+  for (var i in arr) {
+    setup_toggle(arr[i]);
+  }
+}
+
+function setup_toggle(elem) {
+  elem.style.display='block';
+  var target=document.getElementById(elem.id+"_target");
+  target.style.display='none';
+}
+
+function toggle(id) {
+  var elem=document.getElementById(id);
+  if (elem.style.display=='none') {elem.style.display='block';}
+  else {elem.style.display='none';}
+  return false;
+}
+

@@ -1,0 +1,174 @@
+/***** Styling of document with menu layout *****/
+
+/*** Body setup ***/
+
+html, body {
+ margin:0px; padding:0px;
+ background:#CCF; color:#000;
+ font-family:calibri,helvetica,arial,sans-serif;
+ z-index:0;
+}
+
+
+/* General styling */
+a {
+ color:inherit;
+ font-weight:bold;
+ text-decoration:none;
+ font-style:italic;
+}
+a:hover {
+ text-decoration:underline;
+}
+
+
+/*** Menu element ***/
+
+div#menubar {
+ display:block; position:fixed;
+ margin:30px 0px 10px 10px; padding:0px;
+ left:auto; right:0px; top:0px; bottom:0px;
+ height:auto; width:150px; 
+ font-size:14px;
+ z-index:99; overflow:auto;
+}
+
+#menubar {
+ color:#66C;
+ font-weight:inherit;
+}
+#menubar a {
+ color:#336;
+ font-weight:inherit;
+}
+#menubar a:hover {
+ color:#C00;
+}
+#menubar a:active {
+ color: #F66;
+}
+#menubar #presentitem, #menubar #presentitem a {
+ color: #C00;
+}
+#menubar ul {
+ list-style:none;
+ margin:0px; padding:0px;
+}
+#menubar li {
+ font-style:normal;
+ margin:0pt; padding:0pt;
+}
+#menubar li.head {
+ margin:8pt 0pt 0pt 0pt;
+ font-size:120%;
+ font-weight:bold;
+}
+#menubar li.rule {
+ padding: 0; margin: 8pt 12pt 4pt 0pt; height: 2px;
+ background: #99C; vertical-align: middle;
+}
+
+
+/*** Minor elements ***/
+
+div#lastmodified {
+ display:block; position:fixed;
+ left:auto; right:165px; bottom:1px; top:auto;
+ width:auto; height:auto;
+ font-size:10px; font-weight:normal;
+ color:#33C;
+}
+
+div#rss {
+ display:block; position:fixed;
+ width:24px;height:24px;
+ top:5px; right:5px; left:auto; bottom:auto;
+ margin:0px; padding:0px;
+}
+div#rss a.rss {
+ display:block; position:relative;
+ width:24px;height:24px;
+ background-image: url(IMG/rss_3x24x24.png);
+ background-position:0px -0px;
+}
+div#rss a:hover {background-position:0px -24px;}
+div#rss a:focus, div#rss a:active {background-position:0px -48px;}
+
+
+/*** Center element containing Contents element ***/
+
+/* Main elements: center > contents */
+div#contents {
+ display:block; position:fixed;
+ left:15px; right:165px; top:15px; bottom:15px;
+ width:auto; height:auto; margin:0px; padding:8px;
+ z-index:0;
+ border:1px solid #339; background:#FFF;
+ overflow:auto;
+}
+
+/* Corner element within contents */
+div#contents div#corner {
+ position:absolute;
+ top:0px;right:0px;bottom:auto;left:auto;
+ margin:0px;padding:0px;
+}
+div#contents div#corner img {
+ border:none;
+ margin:0px;
+}
+
+
+/*** Popup elements ***/
+
+/* Popup */
+.popup {
+ display:block; position:absolute; visibility:hidden;
+ top:0px; right:0px; left:auto; bottom:auto;
+ width:auto; height:auto;
+ padding:30px 30px 10px 10px;
+}
+*.hover:hover .popup {
+ visibility:visible;
+}
+.popup .frame {
+ display:block;
+ background:#edf; border:3px solid #bac;
+ width:150px; margin:0px; padding:5px;
+}
+.popup ul.frame {
+ margin:0px; padding:0px;
+ list-style:none;
+ font-size:80%;
+}
+.popup ul.frame li {
+ margin:4pt 4pt; padding:2pt;
+ border:1px solid #bac; background:#dce;
+}
+
+/* Hover frames (accessed from the menu) */
+.hoverframe {
+ display:block; position:fixed;
+ left:100px; right:210px; top:50px; bottom:50px;
+ width:auto; height:auto; margin:0px; padding:8px;
+ border:none; color:#009;
+ z-index:99; text-decoration:none;
+}
+.bgframe {
+ display:block;
+ background:#aac; border:2px solid #99a;
+}
+.hoverframe {
+ visibility:hidden;
+}
+a:hover .hoverframe {
+ visibility:visible;
+}
+.hoverframe .center {
+ display:block;
+ margin:8px auto; padding:0px; width:auto;
+ background:#aac; border:2px solid #99a;
+ vertical-align:middle;
+}
+
+

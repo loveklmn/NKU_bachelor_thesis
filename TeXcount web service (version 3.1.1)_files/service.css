@@ -1,0 +1,87 @@
+/*** CSS related to TeXcount web service form ***/
+
+/* Form layout */
+
+#contents div.webform {position:relative; float:left;}
+#contents .webform form {
+ display:block; position:relative; float:left;
+ margin:0; padding:0;
+}
+#contents .webform div.block {
+ position:relative; float:left;
+ margin: 6pt 8pt 0pt 0pt; padding: 0;
+}
+#contents .webform div.group {
+ position:relative; float:left; clear:both;
+ margin:0; padding:0; width:100%;
+}
+#contents .webform div.frameblock {
+ position:relative; float:left;
+ margin: 6pt 8pt 0pt 0pt; padding: 4pt;
+ border: 1pt solid #CC9999;
+ background: #FFFFEE;
+}
+/* Form element styling */
+
+#contents .webform textarea,
+#contents .webform input,
+#contents .webform select {
+ background: #EEE8E0;
+ border: 1px solid #99A;
+ padding: 1px; margin: 0;
+}
+#contents .webform label {display:block; font-size: 70%;}
+#contents .webform .text {font-size: 90%; color: #009;}
+#contents .webform textarea {font-size: 11px; font-family: monospace;}
+#contents .webform input#latexfile {
+ background: #FFF; color: #999; border: #EEE;
+}
+#contents .webform input#submit {
+ background: #FFF8E8; color: #009; border: 2px outset #630;
+ margin: 4pt 8pt 4pt 0pt; padding: 1pt 4pt;
+}
+
+/* Form div#extras styling */
+
+#contents div.trigger {display:none;}
+#contents div.trigger a {
+ background:#FFC; border:1px solid #999;
+ font-weight:normal; font-style:normal; font-size:80%;
+ padding:1px 2pt; margin:0;
+}
+#contents div.trigger a:hover {text-decoration:none; background:#FC6;}
+
+/* Form help elements styling */
+
+#contents .webform a.helplink {
+ display: inline-block;
+ height: 1.1em; width: 1.1em;
+ margin: 0 0 0 4px; padding: 1px;
+ border: 1px solid #966; background: #FEE;
+ font: bold normal 90% sans-serif;
+ text-align:center; vertical-align:middle;
+}
+#contents .webform a.helplink:hover {
+ text-decoration: none;
+ border: 1px solid #A00; background: #F99;
+}
+div#help {
+ clear:both; position:static;
+ margin: 8pt 0 0 0; padding: 8pt 0 0 0;
+ color: #00C;
+}
+div#help h2 {color: #99F;}
+div#help h3 {color: #339;}
+div.helpblock {
+ display: block; position: fixed;
+ top:20%; bottom: 20%; left: 20%; right: 20%;
+ padding: 4pt; margin: 0;
+ border: 2px solid #99C; background: #EEE;
+ overflow: auto;
+}
+
+/* Other */
+
+br.ending {clear:both:}
+div.clearall {border:1px solid #F00;position:absolute;clear:both;float:left; width:100%;}
+

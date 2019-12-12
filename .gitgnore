@@ -1,0 +1,9 @@
+.DS_Store
+.vscode
+missfont.log
+*.toc
+*.aux
+document.synctex.gz
+document.output
+document.log
+document.pdf
